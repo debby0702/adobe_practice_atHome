@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.nav{
+    position: fixed;
+    right:1rem;
+    top:50%;
+    margin-top: -116px;
+}
+
+.nav-btn{
+    background-color: #fff;
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    margin: 15px;
+    opacity: .7;
+    transition-duration: .3s;
+    box-shadow: 0 0 3px  hsla(0, 0%, 100%, 0.728);
+}
+
+.nav-btn-active, .nav-btn:hover{
+    opacity: 1;
+}
+
+.nav-btn-index{
+    background-color: rgb(45, 45, 45);
+}
