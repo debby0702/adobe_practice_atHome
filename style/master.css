@@ -8,6 +8,10 @@
     margin-top: -116px;
 }
 
+.nav-active{
+    background-color: rgba(0,0,0,.7);
+}
+
 .nav-btn{
     background-color: #fff;
     display: block;
@@ -110,3 +114,32 @@
     transform: scale(1);
 }
 
+
+
+@media screen and (max-width:1024px) {
+    .article{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .article{
+        /* background-color: aqua; */
+        width: auto;
+        padding: 4rem 2rem 2rem;
+    }
+    .article-title{
+        text-align: center;
+    }
+    .nav{
+        top:0;
+        left:0;
+        margin-top:0;
+        display: flex;
+        justify-content: center;
+        /* 檢查有無放滿 */
+        /* background-color: #c07777; */
+        width: 100%;
+        z-index: 10;
+    }
+}
