@@ -69,7 +69,20 @@ function setScroll(){
     })
 }
 
+// setFancybox 客製化 =========================================
+
+function setFancybox (){
+         // 啟用fancybox (客製化內容用{}包起來；用,隔開)
+    $grid.find('a').fancybox({
+        protect:true,
+        loop:true,
+        
+
+    })
+}
+
 // ===========================================================
+
 
 // 整理function
 // 所有初始就設定的function放一起
@@ -77,9 +90,10 @@ function setInit(){
     setGrid();
 }
 
-// 所有事件發生才呼叫的function放一起
+// 有事件發生才呼叫的function放一起
 function setEvent(){
     setScroll();
+    setFancybox();
 }
 
 setInit();
